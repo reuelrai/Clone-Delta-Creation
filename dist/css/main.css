@@ -7,19 +7,24 @@
 
 body {
   background-color: #f0f0f0;
-  font-family: "Arial", sans-serif;
-  color: white;
+  font-family: "Poppins", sans-serif;
+  color: black;
 }
 
 nav {
   background: white;
-  color: #fff;
+  color: #000;
+  /* Set text color to black for contrast */
   padding: 20px 40px;
   height: 5rem;
   display: flex;
   justify-content: left;
   align-items: center;
   text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  /* Slightly stronger shadow */
+  position: relative;
+  z-index: 10;
 }
 nav .logo {
   margin-left: 2rem;
@@ -30,6 +35,9 @@ nav ul {
   list-style: none;
   margin-left: 4rem;
   color: #fff;
+}
+nav ul .dropdown .dropdown-content {
+  font-size: 1.2rem;
 }
 nav li a {
   text-decoration: none;
@@ -42,6 +50,7 @@ nav .quote-btn {
   background: rgb(248, 55, 55);
   border: none;
   color: white;
+  font-size: 1.1rem;
 }
 nav .dropdown {
   position: relative;
@@ -52,7 +61,7 @@ nav .dropdown-content {
   top: 100%;
   left: 0;
   background: white;
-  min-width: 160px;
+  min-width: 200px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   opacity: 0;
   transform: translateY(-10px);
@@ -75,4 +84,84 @@ nav .dropdown-content a {
 }
 nav .dropdown-content a:hover {
   background: #f3f4f6;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6fd;
+  max-height: 200vh;
+}
+
+.first-container {
+  display: flex;
+  background-color: #f6f6fd;
+  height: 105vh;
+}
+.first-container .introduction {
+  color: black;
+  margin: 1rem;
+  width: 50%;
+  margin-top: 7rem;
+  margin-left: 5rem;
+}
+.first-container .introduction span {
+  font-weight: bold;
+}
+.first-container .introduction h1 {
+  font-size: 3.9rem;
+  font-weight: bold;
+}
+.first-container .introduction p {
+  margin-top: 2rem;
+  width: 80%;
+}
+.first-container .introduction .quote-btn {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: rgb(248, 55, 55);
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  width: 15rem;
+}
+
+.second-container {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+.second-container .box {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: none;
+  width: 280px;
+  height: 180px;
+  overflow: contain;
+  background: white;
+  gap: 2rem;
+}
+.second-container .box h1 {
+  font-size: 1.4rem;
+  position: relative;
+  /* Needed for ::after positioning */
+  margin-bottom: 1rem;
+  /* Space below for the line */
+}
+.second-container .box h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  /* Slightly below the h1 */
+  width: 100%;
+  /* You can adjust this */
+  height: 3px;
+  /* Thickness of the line */
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  /* Example colors */
+  border-radius: 2px;
 }/*# sourceMappingURL=main.css.map */
