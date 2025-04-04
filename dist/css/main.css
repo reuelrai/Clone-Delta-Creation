@@ -109,6 +109,7 @@ nav .dropdown-content a:hover {
   font-weight: bold;
 }
 .first-container .introduction h1 {
+  margin-top: 2rem;
   font-size: 3.9rem;
   font-weight: bold;
 }
@@ -164,4 +165,13 @@ nav .dropdown-content a:hover {
   background: linear-gradient(to right, #00c6ff, #0072ff);
   /* Example colors */
   border-radius: 2px;
+}
+
+.third-container {
+  display: flex;
+  height: 100vh;
+  background: white;
+}
+.third-container .what-if {
+  padding: 1rem;
 }/*# sourceMappingURL=main.css.map */

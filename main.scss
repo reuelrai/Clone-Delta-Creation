@@ -127,6 +127,7 @@ nav {
         }
 
         h1 {
+            margin-top: 2rem;
             font-size: 3.9rem;
             font-weight: bold;
         }
@@ -193,3 +194,12 @@ nav {
     }
 }
 
+.third-container{
+    display: flex;
+    height: 100vh;
+    background: white;
+
+    .what-if{
+        padding: 1rem;
+    }
+}
