@@ -196,7 +196,7 @@ nav {
 
 .third-container {
     display: flex;
-    height: 100vh;
+    height: 110vh;
     background: white;
 
     .first-part {
@@ -222,9 +222,10 @@ nav {
         font-size: 1.5rem;
         padding-right: 12rem;
 
-        .message{
+        .message {
             margin-top: 3rem;
         }
+
         .message p {
             position: relative;
             display: inline-block;
@@ -246,4 +247,43 @@ nav {
             /* Optional: soft edges */
         }
     }
+}
+
+.fourth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f6f6fd;
+    text-align: center;
+    padding-top: 7rem;
+    
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .cards {
+        display: flex;
+        gap: 4rem;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        margin: 5rem;
+
+
+        .cards-box {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+    }
+
 }
