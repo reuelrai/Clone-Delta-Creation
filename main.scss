@@ -194,7 +194,56 @@ nav {
     }
 }
 
-.third-container{
+.third-container {
     display: flex;
     height: 100vh;
+    background: white;
+
+    .first-part {
+        width: 45%;
+        height: 80%;
+        background-color: white;
+        margin: 5rem;
+        padding: 1rem;
+        flex-direction: row;
+
+
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+    .second-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        font-size: 1.5rem;
+        padding-right: 12rem;
+
+        .message{
+            margin-top: 3rem;
+        }
+        .message p {
+            position: relative;
+            display: inline-block;
+            /* Ensures the underline only spans the paragraph's width */
+        }
+
+        .message p::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -1.5rem;
+            /* Adjust distance below the text */
+            width: 100%;
+            height: 3px;
+            /* Thickness of the underline */
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            /* Customize colors */
+            border-radius: 2px;
+            /* Optional: soft edges */
+        }
+    }
 }

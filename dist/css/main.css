@@ -170,4 +170,47 @@ nav .dropdown-content a:hover {
 .third-container {
   display: flex;
   height: 100vh;
+  background: white;
+}
+.third-container .first-part {
+  width: 45%;
+  height: 80%;
+  background-color: white;
+  margin: 5rem;
+  padding: 1rem;
+  flex-direction: row;
+}
+.third-container .first-part h1 {
+  font-size: 2.5rem;
+}
+.third-container .second-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 1.5rem;
+  padding-right: 12rem;
+}
+.third-container .second-part .message {
+  margin-top: 3rem;
+}
+.third-container .second-part .message p {
+  position: relative;
+  display: inline-block;
+  /* Ensures the underline only spans the paragraph's width */
+}
+.third-container .second-part .message p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+  /* Adjust distance below the text */
+  width: 100%;
+  height: 3px;
+  /* Thickness of the underline */
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  /* Customize colors */
+  border-radius: 2px;
+  /* Optional: soft edges */
 }/*# sourceMappingURL=main.css.map */
