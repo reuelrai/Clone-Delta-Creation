@@ -244,4 +244,77 @@ nav .dropdown-content a:hover {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.fifth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  padding: 5rem;
+}
+.fifth-container .fifth-container-first-div {
+  width: 98%;
+  height: 98%;
+  color: white;
+}
+.fifth-container .fifth-container-first-div .fifth-container-first-div-first-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 85%;
+  gap: 2rem;
+}
+.fifth-container .fifth-container-first-div .fifth-container-first-div-first-part h1 {
+  font-size: 2.5rem;
+}
+.fifth-container .fifth-container-first-div .fifth-container-first-div-first-part .two-box {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.fifth-container .fifth-container-first-div .fifth-container-first-div-first-part .two-box h2 {
+  margin-bottom: 1rem;
+}
+.fifth-container .fifth-container-first-div .fifth-container-first-div-first-part .quote-btn {
+  width: 15rem;
+  padding: 1rem 2rem;
+  background: rgb(248, 55, 55);
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+}
+.fifth-container .fifth-container-first-div .fifth-container-first-div-first-part .checks p {
+  margin-bottom: 1rem;
+}
+
+.sixth-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  gap: 3rem;
+  background-color: white;
+  padding-left: 5rem;
+}
+.sixth-container h1 {
+  font-size: 2.5rem;
+}
+.sixth-container .experience-boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: left;
+  align-items: center;
+}
+.sixth-container .experience-boxes .boxes {
+  border: none;
+  background-color: #fdfbff;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 15rem;
+  padding: 10px;
+  gap: 2rem;
 }/*# sourceMappingURL=main.css.map */
