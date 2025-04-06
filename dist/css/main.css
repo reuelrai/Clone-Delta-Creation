@@ -297,6 +297,7 @@ nav .dropdown-content a:hover {
   gap: 3rem;
   background-color: white;
   padding-left: 5rem;
+  color: black;
 }
 .sixth-container h1 {
   font-size: 2.5rem;
@@ -327,12 +328,12 @@ nav .dropdown-content a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* Optional: Adds a light shadow for depth */
 }
-.sixth-container .experience-icon {
-  height: 25px;
-}
-.sixth-container h1 {
+.sixth-container .boxes h1 {
   font-weight: 800;
   color: #6521d2;
+}
+.sixth-container .experience-icon {
+  height: 25px;
 }
 .sixth-container .title {
   display: flex;

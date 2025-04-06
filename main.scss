@@ -352,9 +352,11 @@ nav {
     gap: 3rem;
     background-color: white;
     padding-left: 5rem;
+    color: black;
 
     h1 {
         font-size: 2.5rem;
+
     }
 
     .experience-boxes {
@@ -383,16 +385,18 @@ nav {
         letter-spacing: 1px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         /* Optional: Adds a light shadow for depth */
+
+        h1 {
+            font-weight: 800;
+            color: #6521d2;
+        }
     }
 
     .experience-icon {
         height: 25px;
     }
 
-    h1 {
-        font-weight: 800;
-        color: #6521d2;
-    }
+
 
     .title {
         display: flex;
