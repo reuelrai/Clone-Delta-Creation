@@ -383,8 +383,8 @@ nav .dropdown-content a:hover {
 .eighth-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  background-color: #f6f6fd;
+  height: 70vh;
+  background-color: white;
   padding: 5rem;
 }
 .eighth-container h1 {
@@ -395,4 +395,63 @@ nav .dropdown-content a:hover {
   display: flex;
   flex-direction: row;
   gap: 4rem;
+}
+.eighth-container .blog-card {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+.eighth-container .blog-card h3 {
+  margin-top: 5rem;
+}
+
+.ninth-container {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  padding: 5rem;
+  gap: 2rem;
+  background: linear-gradient(to right, #5739ff, #0072ff);
+  color: white;
+}
+.ninth-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.tenth-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100vh;
+  background-color: white;
+  padding: 5rem;
+}
+.tenth-container h1 {
+  margin-bottom: 2rem;
+}
+.tenth-container p {
+  width: 50%;
+}
+
+.eleventh-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #3939ff;
+  padding: 5rem;
+}
+.eleventh-container .eleventh-first-part {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: left;
+  align-items: center;
+  width: 40%;
+  gap: 4rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+.eleventh-container .eleventh-first-part p {
+  font-size: 1.2rem;
 }/*# sourceMappingURL=main.css.map */
