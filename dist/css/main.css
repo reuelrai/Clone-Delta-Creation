@@ -341,4 +341,58 @@ nav .dropdown-content a:hover {
   /* Aligns the image and text vertically */
   gap: 10px;
   /* Adds space between the image and the text */
+}
+
+.seventh-container {
+  display: flex;
+  height: 60vh;
+  justify-content: left;
+  padding-left: 5rem;
+  align-items: center;
+  gap: 25rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(https://deltacreation.com.np/storage/2024/01/CTA-revised-new-opt.jpg);
+  background-size: cover;
+  color: white;
+}
+.seventh-container .paragraphs {
+  width: 40%;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+}
+.seventh-container .paragraphs h1 {
+  font-size: 2.5rem;
+}
+.seventh-container .paragraphs p {
+  font-size: 1.1rem;
+}
+.seventh-container .quote-btn {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: rgb(248, 55, 55);
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  width: 15rem;
+  height: 4rem;
+}
+
+.eighth-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f6f6fd;
+  padding: 5rem;
+}
+.eighth-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.eighth-container .blog-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
 }/*# sourceMappingURL=main.css.map */
