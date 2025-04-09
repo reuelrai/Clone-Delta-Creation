@@ -534,10 +534,269 @@ nav {
         color: white;
         margin-bottom: 2rem;
 
-        p{
+        p {
             font-size: 1.2rem;
         }
     }
 
-    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//media queries
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        height: auto;
+
+        ul {
+            flex-direction: column;
+            gap: 1rem;
+            margin-left: 0;
+        }
+
+        .quote-btn {
+            margin-left: 0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .first-container {
+        flex-direction: column;
+        align-items: center;
+
+        .introduction {
+            width: 90%;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+
+    .second-container {
+        flex-direction: column;
+        align-items: center;
+
+        .box {
+            width: 90%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .third-container {
+        flex-direction: column;
+
+        .first-part {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .fourth-container {
+        padding-left: 2rem;
+    }
+
+    .fifth-container {
+        flex-direction: column;
+
+        .fifth-container-first-div-first-part {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .sixth-container {
+        padding-left: 2rem;
+
+        .experience-boxes {
+            flex-direction: column;
+            align-items: center;
+
+            .boxes {
+                width: 90%;
+                margin-bottom: 2rem;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+
+    .seventh-container {
+        flex-direction: column;
+
+        .paragraphs {
+            width: 90%;
+            text-align: center;
+            align-items: center;
+        }
+    }
+
+    .eighth-container {
+        padding-left: 2rem;
+
+        .blog-cards {
+            flex-direction: column;
+            align-items: center;
+
+            .blog-card {
+                width: 90%;
+                text-align: center;
+                align-items: center;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .ninth-container,
+    .tenth-container,
+    .eleventh-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 1rem;
+        height: auto;
+
+        ul {
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-left: 0;
+        }
+
+        .quote-btn {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .first-container {
+        .introduction {
+            width: 90%;
+            text-align: center;
+        }
+    }
+
+    .second-container {
+        .box {
+            width: 90%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .third-container {
+        .first-part {
+            width: 90%;
+            margin-left: auto;  
+            margin-right: auto;
+        }   
+    }
+
+    .fourth-container {
+        padding-left: 2rem;
+    }   
+
+    .fifth-container {
+        flex-direction: column;
+
+        .fifth-container-first-div-first-part {
+            width: 90%;
+            margin-left: auto;  
+            margin-right: auto;
+        }   
+    }
+
+
+    .sixth-container {
+        padding-left: 2rem;
+
+        .experience-boxes {
+            flex-direction: column;
+            align-items: center;
+
+            .boxes {
+                width: 90%;
+                margin-bottom: 2rem;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+
+
+
+
+    .seventh-container {
+        flex-direction: column;
+
+        .paragraphs {
+            width: 90%;
+            text-align: center;
+            align-items: center;
+        }
+    }
+
+    .eighth-container {
+        padding-left: 2rem;
+
+        .blog-cards {
+            flex-direction: column;
+            align-items: center;
+
+            .blog-card {
+                width: 90%;
+                text-align: center;
+                align-items: center;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .ninth-container,   
+    .tenth-container,    .eleventh-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+    }   
+
+    .eleventh-container {
+        .eleventh-first-part {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+        }
+    }
 }

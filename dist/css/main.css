@@ -454,4 +454,192 @@ nav .dropdown-content a:hover {
 }
 .eleventh-container .eleventh-first-part p {
   font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    height: auto;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 0;
+  }
+  nav .quote-btn {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .first-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-container .introduction {
+    width: 90%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .second-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .second-container .box {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  .third-container {
+    flex-direction: column;
+  }
+  .third-container .first-part {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fourth-container {
+    padding-left: 2rem;
+  }
+  .fifth-container {
+    flex-direction: column;
+  }
+  .fifth-container .fifth-container-first-div-first-part {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sixth-container {
+    padding-left: 2rem;
+  }
+  .sixth-container .experience-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sixth-container .experience-boxes .boxes {
+    width: 90%;
+    margin-bottom: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+  .seventh-container {
+    flex-direction: column;
+  }
+  .seventh-container .paragraphs {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+  }
+  .eighth-container {
+    padding-left: 2rem;
+  }
+  .eighth-container .blog-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .eighth-container .blog-cards .blog-card {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .ninth-container,
+  .tenth-container,
+  .eleventh-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .ninth-container h1,
+  .tenth-container h1,
+  .eleventh-container h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 480px) {
+  nav {
+    padding: 1rem;
+    height: auto;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 0;
+  }
+  nav .quote-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .first-container .introduction {
+    width: 90%;
+    text-align: center;
+  }
+  .second-container .box {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  .third-container .first-part {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fourth-container {
+    padding-left: 2rem;
+  }
+  .fifth-container {
+    flex-direction: column;
+  }
+  .fifth-container .fifth-container-first-div-first-part {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sixth-container {
+    padding-left: 2rem;
+  }
+  .sixth-container .experience-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sixth-container .experience-boxes .boxes {
+    width: 90%;
+    margin-bottom: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+  .seventh-container {
+    flex-direction: column;
+  }
+  .seventh-container .paragraphs {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+  }
+  .eighth-container {
+    padding-left: 2rem;
+  }
+  .eighth-container .blog-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .eighth-container .blog-cards .blog-card {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .ninth-container,
+  .tenth-container, .eleventh-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .ninth-container h1,
+  .tenth-container h1, .eleventh-container h1 {
+    font-size: 2.5rem;
+  }
+  .eleventh-container .eleventh-first-part {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+  }
 }/*# sourceMappingURL=main.css.map */
