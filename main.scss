@@ -117,11 +117,24 @@ nav {
     background: #f7f7fd;
 }
 
-.first-container .introduction {
-    width: 100%;
+.first-container {
+    .introduction {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
 
-    h1 {
-        font-size: 2.5rem;
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
     }
 }
 
@@ -228,6 +241,15 @@ nav {
             justify-content: center;
             gap: 2rem;
 
+            h1 {
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+
+            .two-box {
+                display: flex;
+                gap: 5rem;
+            }
         }
     }
 }
@@ -359,5 +381,23 @@ nav {
     .tenth-container,
     .eleventh-container {
         padding: 1rem;
+    }
+}
+
+/* Mobile-first stacking */
+@media (max-width: 768px) {
+    .first-container {
+        flex-direction: column;
+        text-align: center; /* optional for better alignment on small screens */
+    }
+
+    .introduction, .image {
+        width: 100%;
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+        max-height: 768px;
     }
 }

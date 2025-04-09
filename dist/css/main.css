@@ -110,7 +110,16 @@ nav .quote-btn {
 }
 
 .first-container .introduction {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  gap: 2rem;
+}
+.first-container .introduction .image img {
+  max-width: 100%;
+  height: auto;
 }
 .first-container .introduction h1 {
   font-size: 2.5rem;
@@ -206,6 +215,14 @@ nav .quote-btn {
   align-items: left;
   justify-content: center;
   gap: 2rem;
+}
+.fifth-container .fifth-container-first-div .fifth-container-first-div-first-part h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.fifth-container .fifth-container-first-div .fifth-container-first-div-first-part .two-box {
+  display: flex;
+  gap: 5rem;
 }
 
 .sixth-container {
@@ -318,5 +335,20 @@ nav .quote-btn {
   .tenth-container,
   .eleventh-container {
     padding: 1rem;
+  }
+}
+/* Mobile-first stacking */
+@media (max-width: 768px) {
+  .first-container {
+    flex-direction: column;
+    text-align: center; /* optional for better alignment on small screens */
+  }
+  .introduction, .image {
+    width: 100%;
+  }
+  .image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 768px;
   }
 }/*# sourceMappingURL=main.css.map */
