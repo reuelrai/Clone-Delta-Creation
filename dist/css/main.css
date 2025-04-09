@@ -63,7 +63,6 @@ nav .quote-btn {
 .container,
 .first-container,
 .second-container,
-.third-container,
 .fourth-container,
 .fifth-container,
 .sixth-container,
@@ -168,10 +167,58 @@ nav .quote-btn {
 }
 
 .third-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
   background: white;
-  padding: 5rem;
 }
-.third-container h1 {
+.third-container .first-part {
+  flex: 1;
+  text-align: center;
+}
+.third-container .first-part h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.third-container .first-part .image img {
+  max-width: 100%;
+  height: auto;
+}
+.third-container .second-part {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+.third-container .second-part .message {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  margin-bottom: 1rem;
+}
+.third-container .second-part .message p {
+  margin: 0;
+  padding-right: 4rem;
+}
+@media (max-width: 768px) {
+  .third-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .third-container .first-part .image img {
+    max-height: 300px;
+  }
+  .third-container .second-part {
+    -moz-column-count: 1;
+         column-count: 1;
+    font-size: 1.2rem;
+  }
+}
+
+h1 {
   font-size: 2.5rem;
   font-weight: bold;
 }
@@ -374,7 +421,6 @@ nav .quote-btn {
   .container,
   .first-container,
   .second-container,
-  .third-container,
   .fourth-container,
   .fifth-container,
   .sixth-container,
@@ -444,8 +490,10 @@ nav .quote-btn {
   top: 100%;
   left: 0;
   background: white;
-  width: auto; /* Change width to auto */
-  min-width: 200%; /* Ensure dropdown content takes full width of the parent item */
+  width: auto;
+  /* Change width to auto */
+  min-width: 200%;
+  /* Ensure dropdown content takes full width of the parent item */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   opacity: 0;
   transform: translateY(-10px);
