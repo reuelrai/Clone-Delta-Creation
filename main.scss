@@ -26,7 +26,8 @@ nav {
     width: 100%;
     max-width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    
+    text-align: center;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -62,44 +63,7 @@ nav {
     }
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
 
-    .dropdown-content {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: white;
-        width: 100%;
-        max-width: 100%;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        opacity: 0;
-        transform: translateY(-10px);
-        transition: all 0.3s;
-        pointer-events: none;
-        border-radius: 0.5rem;
-        padding: 1rem 0;
-        z-index: 1;
-    }
-
-    &:hover .dropdown-content {
-        opacity: 1;
-        transform: translateY(0);
-        pointer-events: auto;
-    }
-
-    .dropdown-content a {
-        color: #374151;
-        padding: 0.5rem 1rem;
-        text-decoration: none;
-        display: block;
-
-        &:hover {
-            background: #f3f4f6;
-        }
-    }
-}
 
 .container,
 .first-container,
@@ -144,7 +108,7 @@ nav {
     gap: 1.5rem;
 
     .quote-btn {
-        width: 40%;
+        width: 100%;
         padding: 0.75rem 1.5rem;
         background: rgb(248, 55, 55);
         border: none;
@@ -269,27 +233,27 @@ nav {
     gap: 2rem;
     background: #000;
     color: white;
-    
 
-    .two-box{
+
+    .two-box {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         gap: 2rem;
     }
 
-    .fifth-container-first-div{
-        .fifth-container-first-div-first-part{
+    .fifth-container-first-div {
+        .fifth-container-first-div-first-part {
             display: flex;
             flex-direction: column;
-            gap: 2rem;  
+            gap: 2rem;
         }
     }
 }
 
 .fifth-container-first-div,
 .fifth-container-second-div {
-    flex: 1 1 50%;  
+    flex: 1 1 50%;
 }
 
 .fifth-container-second-div {
@@ -299,7 +263,7 @@ nav {
 }
 
 .fifth-container-second-div img {
-    
+
     height: auto;
     max-width: 400px;
 }
@@ -308,8 +272,15 @@ nav {
 @media (max-width: 768px) {
     .fifth-container {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
         padding: 2rem 1rem;
+
+        .introduction{
+            .quote-btn {
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
     }
 
     .fifth-container-first-div,
@@ -469,7 +440,7 @@ nav {
 @media (max-width: 768px) {
     .first-container {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
 
     .first-container .introduction,
@@ -485,6 +456,10 @@ nav {
     .first-container .image img {
         max-height: 480px;
     }
+
+    .quote-btn {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -497,6 +472,98 @@ nav {
     }
 
     .quote-btn {
+        width: 100%;
+    }
+}
+
+/* Hide hamburger on desktop */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Nav links mobile initial hidden state */
+#nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        width: auto;  /* Change width to auto */
+        min-width: 200%;  /* Ensure dropdown content takes full width of the parent item */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s;
+        pointer-events: none;
+        border-radius: 0.5rem;
+        padding: 1rem 0;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .dropdown-content a {
+        color: #374151;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        display: block;
+    
+        &:hover {
+            background: #f3f4f6;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        margin-left: auto;
+    }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem 0;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 5;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 1rem;
+        text-align: left;
+    }
+
+    .quote-btn {
+        margin-top: 1rem;
         width: 100%;
     }
 }
