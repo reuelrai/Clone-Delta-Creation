@@ -106,6 +106,7 @@ nav .quote-btn {
   align-items: center;
   text-align: left;
   gap: 3rem;
+  background: #f7f7fd;
 }
 
 .first-container .introduction {
@@ -130,7 +131,116 @@ nav .quote-btn {
 .sixth-container .boxes,
 .eighth-container .blog-card {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
+}
+
+.second-container {
+  display: flex;
+  gap: 2rem;
+  /* spacing between the boxes */
+  align-items: stretch;
+  /* this is key */
+}
+.second-container .box {
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 4px;
+  padding-top: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+}
+.second-container .box p {
+  margin-top: 1rem;
+}
+
+.third-container {
+  background: white;
+  padding: 5rem;
+}
+.third-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.fourth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.fourth-container .services h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.fourth-container .cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.fourth-container .cards .cards-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  flex: 1;
+  padding: 2rem;
+  border: none;
+  gap: 1rem;
+}
+
+.fifth-container {
+  background: black;
+  color: white;
+  padding: 5rem;
+  display: flex;
+}
+.fifth-container .fifth-container-first-div .fifth-container-first-div-first-part {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sixth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: white;
+  padding: 4rem;
+  gap: 1rem;
+}
+.sixth-container .experience-boxes .boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 400px;
+  border: none;
+  background: #f7f7fd;
+}
+.sixth-container .experience-boxes .boxes h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.sixth-container .experience-boxes .boxes h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(0, 34, 185);
+}
+.sixth-container .experience-boxes .boxes p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
 }
 
 .quote-btn {
