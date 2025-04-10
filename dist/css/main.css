@@ -356,11 +356,6 @@ body {
   }
 }
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
 .fourth-container {
   display: flex;
   flex-direction: column;
@@ -401,6 +396,9 @@ h1 {
   background: #000;
   color: white;
   padding: 5rem;
+}
+.fifth-container h1 {
+  font-size: 2.5rem;
 }
 .fifth-container .two-box {
   display: flex;
@@ -720,5 +718,95 @@ h1 {
     flex-direction: column;
     padding: 1rem;
     gap: 1.5rem;
+  }
+}
+
+.tenth-container {
+  background-color: rgb(95, 0, 220);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tenth-container .tenth-container-first-div {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  padding: 3rem;
+}
+.tenth-container .tenth-container-first-div .tenth-divs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+.tenth-container .tenth-container-first-div .tenth-divs a {
+  text-decoration: none;
+  color: white;
+}
+.tenth-container .follow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* space between h1 and icons */
+  flex-wrap: wrap;
+  /* for responsiveness on smaller screens */
+  padding: 20px;
+  text-align: left;
+  padding-left: 3rem;
+  gap: 1rem;
+}
+.tenth-container .follow h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.tenth-container .follow a {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .tenth-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tenth-container .tenth-container-first-div {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+  .tenth-container .follow {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    gap: 1rem;
+  }
+  .tenth-container .follow h1 {
+    font-size: 1.2rem;
+  }
+  .tenth-container .follow a {
+    font-size: 1.4rem;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  background-color: #262626;
+  color: white;
+  padding: 3rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    height: auto;
+    padding: 1.5rem;
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */
