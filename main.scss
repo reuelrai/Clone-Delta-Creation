@@ -1,4 +1,5 @@
 @import '_variables';
+@import '_header';
 
 /* General Reset */
 * {
@@ -20,51 +21,6 @@ body {
 }
 
 
-nav {
-    background: white;
-    color: $primary-text-color;
-    padding: 1rem 2rem;
-    height: auto;
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
-    z-index: 10;
-
-    .logo {
-        margin-left: 1rem;
-        display: inline-block;
-    }
-
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        list-style: none;
-        margin-left: 4rem;
-    }
-
-    li a {
-        text-decoration: none;
-        color: $primary-text-color;
-        font-size: 1.1rem;
-    }
-
-    .quote-btn {
-        margin-left: auto;
-        padding: 0.75rem 1.5rem;
-        background: rgb(248, 55, 55);
-        border: none;
-        color: $secondary-text-color;
-        font-size: 1rem;
-        cursor: pointer;
-    }
-}
 
 
 
@@ -431,23 +387,7 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-    nav {
-        flex-direction: row;
-        justify-content: center;
-        align-self: center;
-
-
-        ul {
-            flex-direction: column;
-            gap: 1rem;
-            margin-left: 0;
-        }
-
-        .quote-btn {
-            margin-left: 0;
-            margin-top: 1rem;
-        }
-    }
+    
 
     .first-container .introduction h1 {
         font-size: 2rem;
@@ -545,99 +485,7 @@ h1 {
     }
 }
 
-/* Hide hamburger on desktop */
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
 
-/* Nav links mobile initial hidden state */
-#nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-
-    .dropdown-content {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: white;
-        width: auto;
-        /* Change width to auto */
-        min-width: 200%;
-        /* Ensure dropdown content takes full width of the parent item */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        opacity: 0;
-        transform: translateY(-10px);
-        transition: all 0.3s;
-        pointer-events: none;
-        border-radius: 0.5rem;
-        padding: 1rem 0;
-        z-index: 1;
-    }
-
-    .dropdown:hover .dropdown-content {
-        opacity: 1;
-        transform: translateY(0);
-        pointer-events: auto;
-    }
-
-    .dropdown-content a {
-        color: #374151;
-        padding: 0.5rem 1rem;
-        text-decoration: none;
-        display: block;
-
-        &:hover {
-            background: #f3f4f6;
-        }
-    }
-}
-
-
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-        margin-left: auto;
-    }
-
-    #nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        padding: 1rem 0;
-        background-color: $secondary-text-color;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        z-index: 5;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    #nav-links.active {
-        display: flex;
-    }
-
-    nav ul li {
-        margin-left: 1rem;
-        text-align: left;
-    }
-
-    .quote-btn {
-        margin-top: 1rem;
-        width: 100%;
-    }
-}
 
 .seventh-container {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://deltacreation.com.np/storage/2024/01/CTA-revised-new-opt.jpg');
@@ -646,7 +494,7 @@ h1 {
     background-position: center;
     display: flex;
 
-    color: whit$secondary-text-color;
+    color: $secondary-text-color;
     height: 50vh;
     padding: 5rem;
     gap: 10rem;
