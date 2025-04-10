@@ -165,63 +165,6 @@ body {
   line-height: 1.6;
 }
 
-.faq-container {
-  padding: 5rem;
-  background: white;
-}
-.faq-container h1 {
-  font-size: 2.5rem;
-  text-align: left;
-  margin-bottom: 1rem;
-}
-
-.faq {
-  margin-top: 1rem;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 1rem;
-}
-
-.faq-question {
-  background: none;
-  border: none;
-  width: 100%;
-  text-align: left;
-  padding: 1rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.faq-icon {
-  font-size: 1.5rem;
-  transition: transform 0.3s ease;
-}
-
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.4s ease;
-  padding: 0 1rem;
-  opacity: 0;
-  transform: translateY(-5px);
-  transition: all 0.4s ease;
-}
-
-.faq.open .faq-answer {
-  max-height: 500px;
-  padding: 1rem;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.faq.open .faq-icon {
-  transform: rotate(45deg);
-  /* Turns + into an x (cross) */
-}
-
 .container,
 .first-container,
 .second-container,
@@ -289,6 +232,38 @@ body {
   max-height: 650px;
 }
 
+/* 🔁 Mobile-first stacking */
+@media (max-width: 768px) {
+  .first-container {
+    flex-direction: column;
+    text-align: left;
+  }
+  .first-container .introduction,
+  .first-container .image {
+    width: 100%;
+    flex: unset;
+  }
+  .first-container .introduction h1 {
+    font-size: 2rem;
+  }
+  .first-container .image img {
+    max-height: 480px;
+  }
+  .quote-btn {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .first-container {
+    padding: 1rem;
+  }
+  .first-container .introduction h1 {
+    font-size: 1.6rem;
+  }
+  .quote-btn {
+    width: 100%;
+  }
+}
 .second-container,
 .fourth-container .cards,
 .sixth-container .experience-boxes,
@@ -519,101 +494,63 @@ h1 {
   color: #555;
 }
 
-.quote-btn {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  background: rgb(248, 55, 55);
-  color: white;
-  border: none;
-  cursor: pointer;
+.faq-container {
+  padding: 5rem;
+  background: white;
+}
+.faq-container h1 {
+  font-size: 2.5rem;
+  text-align: left;
+  margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 1024px) {
-  nav ul {
-    gap: 1.5rem;
-    margin-left: 2rem;
-  }
+.faq {
+  margin-top: 1rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
 }
-@media screen and (max-width: 768px) {
-  .first-container .introduction h1 {
-    font-size: 2rem;
-  }
-  .second-container .box,
-  .fourth-container .cards-box,
-  .sixth-container .boxes,
-  .eighth-container .blog-card {
-    max-width: 80%;
-  }
+
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-@media screen and (max-width: 480px) {
-  .first-container .introduction h1,
-  .fourth-container h1,
-  .sixth-container h1,
-  .seventh-container h1,
-  .eighth-container h1,
-  .ninth-container h1,
-  .tenth-container h1,
-  .eleventh-container h1 {
-    font-size: 1.5rem;
-  }
-  .quote-btn {
-    width: 100%;
-  }
-  .second-container .box,
-  .fourth-container .cards-box,
-  .sixth-container .boxes,
-  .eighth-container .blog-card {
-    max-width: 100%;
-  }
-  nav {
-    padding: 1rem;
-  }
-  .container,
-  .first-container,
-  .second-container,
-  .fourth-container,
-  .fifth-container,
-  .sixth-container,
-  .seventh-container,
-  .eighth-container,
-  .ninth-container,
-  .tenth-container,
-  .eleventh-container {
-    padding: 1rem;
-  }
+
+.faq-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
 }
-/* 🔁 Mobile-first stacking */
-@media (max-width: 768px) {
-  .first-container {
-    flex-direction: column;
-    text-align: left;
-  }
-  .first-container .introduction,
-  .first-container .image {
-    width: 100%;
-    flex: unset;
-  }
-  .first-container .introduction h1 {
-    font-size: 2rem;
-  }
-  .first-container .image img {
-    max-height: 480px;
-  }
-  .quote-btn {
-    width: 100%;
-  }
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 1rem;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: all 0.4s ease;
 }
-@media (max-width: 480px) {
-  .first-container {
-    padding: 1rem;
-  }
-  .first-container .introduction h1 {
-    font-size: 1.6rem;
-  }
-  .quote-btn {
-    width: 100%;
-  }
+
+.faq.open .faq-answer {
+  max-height: 500px;
+  padding: 1rem;
+  opacity: 1;
+  transform: translateY(0);
 }
+
+.faq.open .faq-icon {
+  transform: rotate(45deg);
+  /* Turns + into an x (cross) */
+}
+
 .seventh-container {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://deltacreation.com.np/storage/2024/01/CTA-revised-new-opt.jpg");
   background-repeat: no-repeat;
