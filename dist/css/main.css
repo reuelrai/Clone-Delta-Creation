@@ -20,7 +20,7 @@ body {
 
 nav {
   background: white;
-  color: #000;
+  color: black;
   padding: 1rem 2rem;
   height: auto;
   width: 100%;
@@ -555,7 +555,7 @@ h1 {
   background-size: cover;
   background-position: center;
   display: flex;
-  color: white;
+  color: whit white;
   height: 50vh;
   padding: 5rem;
   gap: 10rem;
